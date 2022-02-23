@@ -1,3 +1,5 @@
-.randomButton{
-    background-color: pink;
+.randomButton {
+  background-color: pink;
+  border-radius: 10rem;
+  padding: 0.6rem;
 }
