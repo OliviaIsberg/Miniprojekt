@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
+import StartPage from './pages/Startpage';
 
 function App() {
   return (
-    <div className="App">
-      Happy hacking
-    </div>
+    <StartPage/ >
   );
 }
 
