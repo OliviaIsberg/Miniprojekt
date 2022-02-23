@@ -1,4 +1,5 @@
 import './Header.css';
+import GetRandomDrink from './RandomDrink';
 import React from 'react';
 
 function Header() {
@@ -7,6 +8,7 @@ function Header() {
             <header>
                 <h1 className='headerHeading'>Header</h1>
             </header>
+                <GetRandomDrink/>
         </div>
     )
 }
