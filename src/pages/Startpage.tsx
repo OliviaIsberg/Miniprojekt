@@ -1,5 +1,7 @@
+
 import { CSSProperties } from 'react'
 import BoozeCard from '../components/BoozeCard/BoozeCard'
+import Footer from "../components/Footer";
 import Header from '../components/Header'
 
 function StartPage() {
@@ -10,7 +12,9 @@ function StartPage() {
         <BoozeCard title="gin" />
         <BoozeCard title="vodka" />
         <BoozeCard title="bourbon" />
+
       </div>
+<Footer />
     </>
   )
 }
