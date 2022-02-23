@@ -1,5 +1,7 @@
 import './Header.css';
 import GetRandomDrink from './RandomDrink';
+import React from 'react';
+
 function Header() {
     return(
         <div className="headerContainer">
