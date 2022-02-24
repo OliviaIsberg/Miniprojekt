@@ -1,3 +1,22 @@
 .searchBar{
-    background-color: brown;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    border: none;
+    color: black;
+    width: 50vw;
+    background: #cacaca5e; 
+}
+
+
+.searchBarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchBarContainer h3{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
 }
