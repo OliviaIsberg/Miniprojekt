@@ -1,9 +1,15 @@
 import { CSSProperties, useEffect, useState } from 'react'
 import SmallDrinkCard from '../SmallDrinkCard/SmallDrinkCard'
 import { Drink } from '../../Interfaces'
-import { Props } from '../../Interfaces'
 
-const CardsContainer = (props: Props) => {
+interface props{
+  title: string
+  imgurl: number
+}
+
+const CardsContainer = (
+  // props: Props
+  ) => {
   const [drinks, setDrinks] = useState([] as Drink[])
 
   useEffect(() => {
