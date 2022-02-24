@@ -1,16 +1,16 @@
 import { CSSProperties, useEffect, useState } from 'react'
-import SmallDrinkCard from './SmallDrinkCard/SmallDrinkCard'
+import SmallDrinkCard from '../SmallDrinkCard/SmallDrinkCard'
+import { Drink } from '../../Interfaces'
 
-interface Props {}
-
-interface drinks {
-  strDrink: string
-  strDrinkThumb: string
-  idDrink: string
+interface props{
+  title: string
+  imgurl: number
 }
 
-const CardsContainer = (props: Props) => {
-  const [drinks, setDrinks] = useState([] as drinks[])
+const CardsContainer = (
+  // props: Props
+  ) => {
+  const [drinks, setDrinks] = useState([] as Drink[])
 
   useEffect(() => {
     fetch(`https://thecocktaildb.com/api/json/v1/1/filter.php?i=gin`)

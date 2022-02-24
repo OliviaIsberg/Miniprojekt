@@ -1,15 +1,11 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import BigDrinkCard from "./BigDrinkCard";
-import Header from "./Header";
-import StartPage from "../pages/Startpage";
-import AboutPage from "../pages/AboutPage";
-import ErrorPage from "../pages/ErrorPage";
-import Footer from "./Footer";
-import CardsContainer from "./CardsContainer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import BigDrinkCard from '../BigDrinkCard/BigDrinkCard'
+import Header from '../Header/Header'
+import StartPage from '../../pages/Startpage'
+import AboutPage from '../../pages/AboutPage'
+import ErrorPage from '../../pages/ErrorPage'
+import Footer from '../Footer/Footer'
+import CardsContainer from '../CardsContainer/CardsContainer'
 
 
 function Layout() {
@@ -29,7 +25,7 @@ function Layout() {
       </div>
       <Footer />
     </>
-  );
+  )
 }
 
-export default Layout;
+export default Layout
