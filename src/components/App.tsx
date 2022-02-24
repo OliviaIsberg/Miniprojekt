@@ -1,11 +1,8 @@
-
-
-
 import React from 'react';
 import './App.css';
-import Footer from './components/Footer';
+import Footer from './Footer';
 import Layout from './Layout';
-import StartPage from './pages/Startpage';
+import StartPage from '../pages/Startpage';
 
 function App() {
   return (

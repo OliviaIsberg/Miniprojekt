@@ -3,12 +3,12 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import BigDrinkCard from "./components/BigDrinkCard";
-import Header from "./components/Header";
-import StartPage from "./pages/Startpage";
-import AboutPage from "./pages/AboutPage";
-import ErrorPage from "./pages/ErrorPage";
-import Footer from "./components/Footer";
+import BigDrinkCard from "./BigDrinkCard";
+import Header from "./Header";
+import StartPage from "../pages/Startpage";
+import AboutPage from "../pages/AboutPage";
+import ErrorPage from "../pages/ErrorPage";
+import Footer from "./Footer";
 
 
 function Layout() {

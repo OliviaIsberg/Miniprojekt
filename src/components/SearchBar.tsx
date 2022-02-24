@@ -1,11 +1,7 @@
 import React, {} from "react";
 import { Routes } from "react-router-dom";
 import "./SearchBar.css";
-
-interface SearchBarProps{
-    placeHolder: string
-    handleChange: React.ChangeEventHandler
-}
+import { SearchBarProps } from "../Interfaces";
 
 export const SearchBar = ({ placeHolder, handleChange }: SearchBarProps) => (
   <input
