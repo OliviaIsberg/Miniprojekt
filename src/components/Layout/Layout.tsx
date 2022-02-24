@@ -7,7 +7,6 @@ import ErrorPage from '../../pages/ErrorPage'
 import Footer from '../Footer/Footer'
 import CardsContainer from '../CardsContainer/CardsContainer'
 
-
 function Layout() {
   return (
     <>
@@ -16,7 +15,18 @@ function Layout() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<StartPage />} />
-            <Route path="alcohol/*" element={<CardsContainer drinks={[]} />} />
+            <Route
+              path="alcohol/gin"
+              element={<CardsContainer drinks={[]} />}
+            />
+            <Route
+              path="alcohol/vodka"
+              element={<CardsContainer drinks={[]} />}
+            />
+            <Route
+              path="alcohol/bourbon"
+              element={<CardsContainer drinks={[]} />}
+            />
             <Route path="drink/*" element={<BigDrinkCard />} />
             <Route path="about/*" element={<AboutPage />} />
             <Route path="*" element={<ErrorPage />} />

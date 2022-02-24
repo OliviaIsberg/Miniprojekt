@@ -3,6 +3,7 @@ import BoozeCard from "../components/BoozeCard/BoozeCard";
 import CardsContainer from "../components/CardsContainer/CardsContainer";
 import SearchForDrinks from "../components/Search/SearchForDrinks";
 import { Drink } from "../Interfaces";
+import { Link } from 'react-router-dom'
 
 function StartPage() {
   const [drinks, setDrinks] = useState([] as Drink[]);
