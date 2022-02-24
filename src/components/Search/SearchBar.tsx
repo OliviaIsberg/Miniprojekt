@@ -1,7 +1,5 @@
-import React, {} from "react";
-import { Routes } from "react-router-dom";
-import "./SearchBar.css";
-import { SearchBarProps } from "../Interfaces";
+import './SearchBar.css'
+import { SearchBarProps } from '../../Interfaces'
 
 export const SearchBar = ({ placeHolder, handleChange }: SearchBarProps) => (
   <input
@@ -10,5 +8,4 @@ export const SearchBar = ({ placeHolder, handleChange }: SearchBarProps) => (
     placeholder={placeHolder}
     onChange={handleChange}
   />
-);
-
+)
