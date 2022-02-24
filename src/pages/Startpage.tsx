@@ -4,6 +4,7 @@ import CardsContainer from "../components/CardsContainer/CardsContainer";
 import SearchForDrinks from "../components/Search/SearchForDrinks";
 import { Drink } from "../Interfaces";
 import { Link } from 'react-router-dom'
+import { link } from "fs";
 
 function StartPage() {
   const [drinks, setDrinks] = useState([] as Drink[]);
@@ -18,9 +19,9 @@ function StartPage() {
 
       {!drinks.length && (
         <div style={rootStyle}>
-          <BoozeCard title="gin" />
-          <BoozeCard title="vodka" />
-          <BoozeCard title="bourbon" />
+          <BoozeCard booze ="gin" title = "Gin"/>
+          <BoozeCard booze ="vodka" title = "Vodka"/>
+          <BoozeCard booze ="bourbon" title = "Bourbon"/>
         </div>
       )}
     </>
