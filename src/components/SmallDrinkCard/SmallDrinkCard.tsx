@@ -7,7 +7,7 @@ interface Props {
 
 const SmallDrinkCard = (props: Props) => {
   return (
-    <div className="container">
+    <div className="smallDrink-container">
       <img src={props.imageUrl} alt={props.title} />
       <h3>{props.title}</h3>
       <button>see recipe</button>
