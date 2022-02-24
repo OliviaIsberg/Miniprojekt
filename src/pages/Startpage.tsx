@@ -1,6 +1,5 @@
 import { CSSProperties } from 'react'
 import BoozeCard from '../components/BoozeCard/BoozeCard'
-import CardsContainer from '../components/CardsContainer/CardsContainer'
 import SearchForDrinks from '../components/Search/SearchForDrinks'
 
 function StartPage() {
@@ -12,7 +11,6 @@ function StartPage() {
         <BoozeCard title="vodka" />
         <BoozeCard title="bourbon" />
       </div>
-      <CardsContainer />
     </>
   )
 }
