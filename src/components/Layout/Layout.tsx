@@ -17,15 +17,15 @@ function Layout() {
             <Route path="/" element={<StartPage />} />
             <Route
               path="alcohol/gin"
-              element={<CardsContainer alcohol="gin" />}
+              element={<CardsContainer drinks={[]} />}
             />
             <Route
               path="alcohol/vodka"
-              element={<CardsContainer alcohol="vodka" />}
+              element={<CardsContainer drinks={[]} />}
             />
             <Route
               path="alcohol/bourbon"
-              element={<CardsContainer alcohol="bourbon" />}
+              element={<CardsContainer drinks={[]} />}
             />
             <Route path="drink/*" element={<BigDrinkCard />} />
             <Route path="about/*" element={<AboutPage />} />
