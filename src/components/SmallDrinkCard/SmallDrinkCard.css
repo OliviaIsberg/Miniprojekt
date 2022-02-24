@@ -1,0 +1,39 @@
+.container {
+  --shadow-color: 0deg 0% 63%;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: #cef79b;
+  width: 15rem;
+  padding: 1rem;
+  box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+.container:hover,
+.container > button:hover {
+  cursor: pointer;
+}
+
+.container > img {
+  width: 100%;
+  border-radius: 0.35rem;
+}
+
+.container > h3 {
+  color: #385e08;
+  font-weight: 700;
+}
+
+.container > button {
+  border: none;
+  border-radius: 0.35rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: #8bea12;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
