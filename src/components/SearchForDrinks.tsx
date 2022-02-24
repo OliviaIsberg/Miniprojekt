@@ -27,7 +27,7 @@ function SearchForDrinks() {
   };
 
   return (
-    <div>
+    <div className="searchBarContainer">
       <h3>Search for a drink by its name:</h3>
       <SearchBar placeHolder="Search..." handleChange={handleChange} />
     </div>
