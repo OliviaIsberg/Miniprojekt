@@ -16,7 +16,7 @@ const BoozeCard = (props: Props) => {
       .then((data) => {
         return setImageUrl(data.drinks[0].strDrinkThumb)
       })
-  }, [])
+  }, [props.title])
 
   return (
     <div className="container" style={{ backgroundImage: `url(${imageUrl})` }}>
