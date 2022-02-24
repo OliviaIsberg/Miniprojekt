@@ -1,4 +1,5 @@
 import { CSSProperties } from 'react'
+import { Link } from 'react-router-dom'
 import BoozeCard from '../components/BoozeCard/BoozeCard'
 import SearchForDrinks from '../components/Search/SearchForDrinks'
 
@@ -7,9 +8,15 @@ function StartPage() {
     <>
       <SearchForDrinks />
       <div style={rootStyle}>
-        <BoozeCard title="gin" />
-        <BoozeCard title="vodka" />
-        <BoozeCard title="bourbon" />
+        <Link to="/alcohol/gin">
+          <BoozeCard title="gin" />
+        </Link>
+        <Link to="/alcohol/vodka">
+          <BoozeCard title="vodka" />
+        </Link>
+        <Link to="/alcohol/bourbon">
+          <BoozeCard title="bourbon" />
+        </Link>
       </div>
     </>
   )
