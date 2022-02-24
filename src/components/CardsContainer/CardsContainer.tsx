@@ -8,20 +8,18 @@ interface Props {
   // imgurl: number
 }
 
-const CardsContainer = (props: Props) => {
+const CardsContainer = ({ alcohol }: Props) => {
   const [drinks, setDrinks] = useState([] as Drink[])
 
   useEffect(() => {
-    fetch(
-      `https://thecocktaildb.com/api/json/v1/1/filter.php?i=${props.alcohol}`
-    )
+    fetch(`https://thecocktaildb.com/api/json/v1/1/filter.php?i=${alcohol}`)
       .then((res) => {
         return res.json()
       })
       .then((data) => {
         return setDrinks(data.drinks)
       })
-  }, [props.alcohol])
+  }, [alcohol])
 
   return (
     <div className="cards-wrapper">
