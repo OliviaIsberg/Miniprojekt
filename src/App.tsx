@@ -1,9 +1,18 @@
-import React from 'react'
-import './App.css'
-import StartPage from './pages/Startpage'
+
+
+
+import React from 'react';
+import './App.css';
+import Footer from './components/Footer';
+import Layout from './Layout';
+import StartPage from './pages/Startpage';
 
 function App() {
-  return <StartPage />
+  return (
+    <Layout/>
+
+  );
+
 }
 
 export default App
