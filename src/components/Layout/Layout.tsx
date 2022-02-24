@@ -16,7 +16,7 @@ function Layout() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<StartPage />} />
-            <Route path="alcohol/*" element={<CardsContainer />} />
+            <Route path="alcohol/*" element={<CardsContainer drinks={[]} />} />
             <Route path="drink/*" element={<BigDrinkCard />} />
             <Route path="about/*" element={<AboutPage />} />
             <Route path="*" element={<ErrorPage />} />
