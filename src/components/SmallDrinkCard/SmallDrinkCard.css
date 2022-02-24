@@ -1,10 +1,10 @@
-.container {
+.smallDrink-container {
   --shadow-color: 0deg 0% 63%;
+  flex: 1 15%;
   border-radius: 0.5rem;
   border: 1px solid white;
   overflow: hidden;
   background-color: #cef79b;
-  width: 15rem;
   padding: 1rem;
   box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
     0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
@@ -12,22 +12,22 @@
     5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
 }
 
-.container:hover,
-.container > button:hover {
+.smallDrink-container:hover,
+.smallDrink-container > button:hover {
   cursor: pointer;
 }
 
-.container > img {
-  width: 100%;
+.smallDrink-container > img {
+  max-width: 100%;
   border-radius: 0.35rem;
 }
 
-.container > h3 {
+.smallDrink-container > h3 {
   color: #385e08;
   font-weight: 700;
 }
 
-.container > button {
+.smallDrink-container > button {
   border: none;
   border-radius: 0.35rem;
   width: 100%;

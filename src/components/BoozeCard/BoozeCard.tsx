@@ -19,7 +19,10 @@ const BoozeCard = (props: Props) => {
   }, [props.title])
 
   return (
-    <div className="container" style={{ backgroundImage: `url(${imageUrl})` }}>
+    <div
+      className="booze-container"
+      style={{ backgroundImage: `url(${imageUrl})` }}
+    >
       <h2 className="card-title">{props.title}</h2>
     </div>
   )
