@@ -5,7 +5,7 @@ import StartPage from '../../pages/Startpage'
 import AboutPage from '../../pages/AboutPage'
 import ErrorPage from '../../pages/ErrorPage'
 import Footer from '../Footer/Footer'
-import CardsContainer from '../CardsContainer/CardsContainer'
+import BoozePage from '../../pages/BoozePage'
 
 function Layout() {
   return (
@@ -16,16 +16,8 @@ function Layout() {
           <Routes>
             <Route path="/" element={<StartPage />} />
             <Route
-              path="alcohol/gin"
-              element={<CardsContainer drinks={[]} />}
-            />
-            <Route
-              path="alcohol/vodka"
-              element={<CardsContainer drinks={[]} />}
-            />
-            <Route
-              path="alcohol/bourbon"
-              element={<CardsContainer drinks={[]} />}
+              path="alcohol/:booze"
+              element={<BoozePage drinks={[]}/>}
             />
             <Route path="drink/*" element={<BigDrinkCard />} />
             <Route path="about/*" element={<AboutPage />} />
