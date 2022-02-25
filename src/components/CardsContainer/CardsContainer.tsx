@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import SmallDrinkCard from "../SmallDrinkCard/SmallDrinkCard";
 import { Drink } from "../../Interfaces";
 import "./CardsContainer.css";

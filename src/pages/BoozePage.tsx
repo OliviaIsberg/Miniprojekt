@@ -3,11 +3,8 @@ import { useParams } from "react-router-dom";
 import CardsContainer from "../components/CardsContainer/CardsContainer";
 import { Drink } from "../Interfaces";
 
-interface Props {
-  drinks: Drink[];
-}
 
-function BoozePage(props: Props) {
+function BoozePage() {
   let { booze } = useParams();
   const [drinks, setDrinks] = useState([] as Drink[]);
 
