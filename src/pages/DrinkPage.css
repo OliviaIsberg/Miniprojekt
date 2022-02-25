@@ -1,0 +1,10 @@
+.bigCardsContainer {
+  background-color: #cef79b;
+  display: flex;
+  padding: 4rem;
+  flex: 1;
+}
+
+.bigCardInfo {
+  padding: 4rem;
+}

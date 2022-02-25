@@ -1,6 +1,9 @@
 import React, { } from "react";
 import './RandomDrink.css';
 
+interface RandomDrink {
+    id: number;
+}
 
 const GetRandomDrink = () => {
     function handle(event: React.MouseEvent<HTMLButtonElement>) {
@@ -9,7 +12,7 @@ const GetRandomDrink = () => {
             return res.json()
           })
           .then((data) => {
-              console.log(data);
+              window.location.pathname = `/drink/${data.drinks[0].idDrink}`
           })
     }
  

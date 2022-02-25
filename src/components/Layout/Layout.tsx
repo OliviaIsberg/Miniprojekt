@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import BigDrinkCard from '../BigDrinkCard/BigDrinkCard'
 import Header from '../Header/Header'
 import StartPage from '../../pages/Startpage'
 import AboutPage from '../../pages/AboutPage'
 import ErrorPage from '../../pages/ErrorPage'
 import Footer from '../Footer/Footer'
 import CardsContainer from '../CardsContainer/CardsContainer'
+import DrinkPage from '../../pages/DrinkPage'
 
 function Layout() {
   return (
@@ -27,7 +27,7 @@ function Layout() {
               path="alcohol/bourbon"
               element={<CardsContainer drinks={[]} />}
             />
-            <Route path="drink/*" element={<BigDrinkCard />} />
+            <Route path="drink/:id" element={<DrinkPage drinks={[]} />} />
             <Route path="about/*" element={<AboutPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
