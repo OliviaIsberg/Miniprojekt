@@ -1,6 +1,7 @@
 import "./Header.css";
 import GetRandomDrink from "../RandomDrink/RandomDrink";
 import { Link } from "react-router-dom";
+import AboutPage from "../../pages/AboutPage";
 
 function Header() {
   return (
