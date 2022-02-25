@@ -15,7 +15,7 @@ function StartPage() {
         changeCallBack={(searchedDrinks: Drink[]) => setDrinks(searchedDrinks)}
       />
 
-      {drinks.length && <CardsContainer drinks={drinks} />}
+      {!!drinks.length && <CardsContainer drinks={drinks} />}
 
       {!drinks.length && (
         <div style={rootStyle}>

@@ -4,16 +4,15 @@ import StartPage from '../../pages/Startpage'
 import AboutPage from '../../pages/AboutPage'
 import ErrorPage from '../../pages/ErrorPage'
 import Footer from '../Footer/Footer'
-import CardsContainer from '../CardsContainer/CardsContainer'
 import DrinkPage from '../../pages/DrinkPage'
 import BoozePage from '../../pages/BoozePage'
 
 function Layout() {
   return (
     <>
-      <Header />
       <div className="main">
         <BrowserRouter>
+        <Header />
           <Routes>
             <Route path="/" element={<StartPage />} />
             <Route
@@ -24,9 +23,10 @@ function Layout() {
             <Route path="about/*" element={<AboutPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
-      <Footer />
+      
     </>
   )
 }

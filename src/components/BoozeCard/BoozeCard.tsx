@@ -22,7 +22,7 @@ const BoozeCard = (props: Props) => {
   }, [props.booze]);
 
   return (
-    <Link to={`/alcohol/${props.booze}`} onClick={() => {}}>
+    <Link to={`/alcohol/${props.booze}`}>
       <div
         className="booze-container"
         style={{ backgroundImage: `url(${imageUrl})` }}
