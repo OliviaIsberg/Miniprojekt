@@ -13,9 +13,9 @@ const CardsContainer = (props: Props) => {
       {props.drinks.length &&
         props.drinks.map((drink) => (
           <SmallDrinkCard
-            key={drink.idDrink}
-            imageUrl={drink.strDrinkThumb}
-            title={drink.strDrink}
+          key={drink.idDrink}
+          imageUrl={drink.strDrinkThumb}
+          title={drink.strDrink}
           />
         ))}
     </div>
