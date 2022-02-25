@@ -11,13 +11,7 @@ const CardsContainer = (props: Props) => {
   return (
     <div className="cards-wrapper">
       {props.drinks.length &&
-        props.drinks.map((drink) => (
-          <SmallDrinkCard
-          key={drink.idDrink}
-          imageUrl={drink.strDrinkThumb}
-          title={drink.strDrink}
-          />
-        ))}
+        props.drinks.map((drink) => <SmallDrinkCard drink={drink} />)}
     </div>
   );
 };
