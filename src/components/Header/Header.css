@@ -2,7 +2,7 @@
   background-color: transparent;
   height: 5rem;
   width: min(100% - 2rem, 80rem);
-  margin: 2rem auto;
+  margin: 4vmin auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

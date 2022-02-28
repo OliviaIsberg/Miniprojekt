@@ -2,7 +2,6 @@
   --shadow-color: 0deg 0% 63%;
   flex: 1 1 15rem;
   display: grid;
-  place-content: end center;
   border-radius: var(--borderRadius-default);
   border: 1px solid white;
   overflow: hidden;
@@ -13,22 +12,17 @@
     5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
   background-size: cover;
   background-repeat: no-repeat;
-  block-size: 20vmax;
+  block-size: 20rem;
 }
 
-.smallDrink-container:hover,
-.smallDrink-container > button:hover {
+.smallDrink-container > div button:hover {
   cursor: pointer;
 }
-
-/* .smallDrink-container > img {
-  max-width: 100%;
-  border-radius: 0.35rem;
-} */
 
 .smallDrink-container > div {
   background-color: rgba(216, 112, 147, 0.5);
   backdrop-filter: blur(2px);
+  transform: translateY(60%);
 }
 
 .smallDrink-container > div > h3 {
