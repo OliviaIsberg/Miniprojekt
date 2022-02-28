@@ -6,13 +6,16 @@ import ErrorPage from '../../pages/ErrorPage'
 import Footer from '../Footer/Footer'
 import DrinkPage from '../../pages/DrinkPage'
 import BoozePage from '../../pages/BoozePage'
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
 
 function Layout() {
   return (
     <>
       <div className="main">
         <BrowserRouter>
+        <ErrorBoundary>
         <Header />
+        </ErrorBoundary>
           <Routes>
             <Route path="/" element={<StartPage />} />
             <Route

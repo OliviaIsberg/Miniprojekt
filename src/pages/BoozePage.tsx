@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CardsContainer from "../components/CardsContainer/CardsContainer";
+import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import { Drink } from "../Interfaces";
 
 
@@ -22,7 +23,10 @@ function BoozePage() {
     <>
       <div className="BoozeContainer">
         <h2>Drinks that contains {booze}</h2>
+        <ErrorBoundary>
         <CardsContainer drinks={drinks} />
+        </ErrorBoundary>
+
       </div>
     </>
   );
