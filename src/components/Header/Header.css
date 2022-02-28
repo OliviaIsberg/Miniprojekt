@@ -1,14 +1,34 @@
 .headerContainer {
-  background-color: #8bea12;
+  background-color: transparent;
   height: 5rem;
-  max-width: 100%;
+  width: min(100% - 2rem, 80rem);
+  margin: 4vmin auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
 }
 
 .headerHeading {
   margin: 0;
-  color: white;
+  background-image: linear-gradient(
+    90deg,
+    hsl(191deg 100% 51%) 0%,
+    hsl(194deg 100% 50%) 5%,
+    hsl(197deg 100% 50%) 9%,
+    hsl(202deg 100% 50%) 14%,
+    hsl(212deg 100% 58%) 19%,
+    hsl(246deg 100% 72%) 23%,
+    hsl(277deg 95% 61%) 28%,
+    hsl(310deg 100% 48%) 33%,
+    hsl(328deg 100% 50%) 45%,
+    hsl(345deg 100% 50%) 60%,
+    hsl(28deg 100% 50%) 67%,
+    hsl(44deg 100% 47%) 79%,
+    hsl(73deg 100% 43%) 90%,
+    hsl(133deg 100% 51%) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2rem, 6vw, 4rem);
+  -webkit-text-stroke: 1px white;
 }

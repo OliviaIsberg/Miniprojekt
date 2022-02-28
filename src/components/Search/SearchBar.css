@@ -1,22 +1,33 @@
-.searchBar{
-    padding: 0.8rem;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-    border: none;
-    color: black;
-    width: 50vw;
-    background: #cacaca5e; 
+.searchBarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 4vmin auto;
+  width: min(100% - 2rem, 80rem);
+}
+.searchBar {
+  padding: 1rem 2rem;
+  border-radius: var(--borderRadius-default);
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  width: 70%;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
 }
 
-
-.searchBarContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.searchBar::placeholder {
+  color: white;
 }
 
-.searchBarContainer h3{
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 0;
+.searchBarContainer h3 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 1rem;
+  margin: 0;
+  color: var(--clr-blue);
+  text-transform: uppercase;
+}
+
+.searchBarContainer p {
+  color: white;
 }

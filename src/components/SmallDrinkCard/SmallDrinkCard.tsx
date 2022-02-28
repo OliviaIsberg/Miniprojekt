@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './SmallDrinkCard.css'
-import { Drink } from "../../Interfaces";
+import { Drink } from '../../Interfaces'
 
 interface Props {
   drink: Drink
@@ -8,10 +8,17 @@ interface Props {
 
 const SmallDrinkCard = (props: Props) => {
   return (
-    <div className="smallDrink-container">
-      <img src={props.drink.strDrinkThumb} alt={props.drink.strDrink} />
-      <h3>{props.drink.strDrink}</h3>
-      <Link to ={`/drink/${props.drink.idDrink}`}><button>see recipe</button></Link>
+    <div
+      className="smallDrink-container"
+      style={{ backgroundImage: `url(${props.drink.strDrinkThumb})` }}
+    >
+      {/* <img src={props.drink.strDrinkThumb} alt={props.drink.strDrink} /> */}
+      <div>
+        <h3>{props.drink.strDrink}</h3>
+        <Link to={`/drink/${props.drink.idDrink}`}>
+          <button>see recipe</button>
+        </Link>
+      </div>
     </div>
   )
 }

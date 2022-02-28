@@ -1,9 +1,13 @@
 .footerContainer {
-  background-color: #8bea12;
-  height: 5rem;
-  width: 100%;
+  background-color: black;
+}
+
+.footerContainer footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: min(100% - 2rem, 80rem);
 }
 
 .footerHeading {

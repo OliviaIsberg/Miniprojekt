@@ -1,17 +1,22 @@
 .booze-container {
   --shadow-color: 0deg 0% 63%;
   background: #cef79b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid white;
   display: grid;
-  place-content: center;
+  place-content: end center;
   height: 30rem;
   box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
     0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
     2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
     5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
 }
 
 .card-title {
   color: white;
   text-transform: uppercase;
+  font-size: clamp(2rem, 4vw, 2.5rem);
 }

@@ -10,27 +10,24 @@ import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
 
 function Layout() {
   return (
-    <>
+
       <div className="main">
         <BrowserRouter>
         <ErrorBoundary>
         <Header />
         </ErrorBoundary>
+        <div className="content">
           <Routes>
             <Route path="/" element={<StartPage />} />
-            <Route
-              path="alcohol/:booze"
-              element={<BoozePage />}
-            />
+            <Route path="alcohol/:booze" element={<BoozePage />} />
             <Route path="drink/:id" element={<DrinkPage drinks={[]} />} />
             <Route path="about/*" element={<AboutPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
-          <Footer />
-        </BrowserRouter>
-      </div>
-      
-    </>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </div>
   )
 }
 
