@@ -1,31 +1,27 @@
-.devList{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.devList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.devList li{
-    list-style: none;
-    text-align: center;   
-    padding: 2rem;
-    font-size: 2rem;
+.devList li {
+  list-style: none;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
 }
 
-.devList img{
-    max-width: 20rem;
-    border-radius: 20px;
+.devList img {
+  max-width: 20rem;
+  border-radius: 20px;
 }
 
-.textContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
+.textContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.textContainer div{
-    max-width: 60vw;
-    border: 1px solid white;
-    border-radius: 20px;
+.textContainer div {
+  max-width: 60vw;
 }
-

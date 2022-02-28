@@ -1,15 +1,19 @@
 .smallDrink-container {
   --shadow-color: 0deg 0% 63%;
-  flex: 1 15%;
-  border-radius: 0.5rem;
+  flex: 1 1 15rem;
+  display: grid;
+  place-content: end center;
+  border-radius: var(--borderRadius-default);
   border: 1px solid white;
   overflow: hidden;
   background-color: #cef79b;
-  padding: 1rem;
   box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
     0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
     2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
     5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  background-size: cover;
+  background-repeat: no-repeat;
+  block-size: 20vmax;
 }
 
 .smallDrink-container:hover,
@@ -17,21 +21,26 @@
   cursor: pointer;
 }
 
-.smallDrink-container > img {
+/* .smallDrink-container > img {
   max-width: 100%;
   border-radius: 0.35rem;
+} */
+
+.smallDrink-container > div {
+  background-color: rgba(216, 112, 147, 0.5);
+  backdrop-filter: blur(2px);
 }
 
-.smallDrink-container > h3 {
-  color: #385e08;
+.smallDrink-container > div > h3 {
+  color: white;
   font-weight: 700;
 }
 
 .smallDrink-container button {
   border: none;
   border-radius: 0.35rem;
-  width: 100%;
   padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
   background-color: #8bea12;
   color: white;
   font-weight: 600;

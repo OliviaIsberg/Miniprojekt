@@ -9,25 +9,21 @@ import BoozePage from '../../pages/BoozePage'
 
 function Layout() {
   return (
-    <>
-      <div className="main">
-        <BrowserRouter>
+    <div className="main">
+      <BrowserRouter>
         <Header />
+        <div className="content">
           <Routes>
             <Route path="/" element={<StartPage />} />
-            <Route
-              path="alcohol/:booze"
-              element={<BoozePage />}
-            />
+            <Route path="alcohol/:booze" element={<BoozePage />} />
             <Route path="drink/:id" element={<DrinkPage drinks={[]} />} />
             <Route path="about/*" element={<AboutPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
-          <Footer />
-        </BrowserRouter>
-      </div>
-      
-    </>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </div>
   )
 }
 
