@@ -64,11 +64,20 @@ const DrinkPage = () => {
       <div className="bigCardInfo">
         <h1>{drink?.strDrink}</h1>
         <p>
-          {drink?.strDrink}
+        Serve: {drink?.strGlass}
+        </p>
+        <p>
+        Category: {drink?.strCategory}
         </p>
         <ul>
           {ingredients}
         </ul>
+        <p>
+          Instructions
+        </p>
+        <p>
+          {drink?.strInstructions}
+        </p>
       </div>
     </div>
   )
