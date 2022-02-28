@@ -20,7 +20,7 @@ function Layout() {
           <Routes>
             <Route path="/" element={<StartPage />} />
             <Route path="alcohol/:booze" element={<BoozePage />} />
-            <Route path="drink/:id" element={<DrinkPage drinks={[]} />} />
+            <Route path="drink/:id" element={<DrinkPage />} />
             <Route path="about/*" element={<AboutPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
