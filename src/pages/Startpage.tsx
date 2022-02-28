@@ -28,7 +28,7 @@ function StartPage() {
 
 const rootStyle: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr)',
   gap: '2rem',
   margin: '8rem auto',
   width: 'min(100% - 2rem, 80rem)',
