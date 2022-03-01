@@ -1,25 +1,24 @@
-import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import './BoozeCard.css'
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./BoozeCard.css";
 
 interface Props {
-  booze: string
-  title: string
+  booze: string;
+  title: string;
 }
 
 const BoozeCard = (props: Props) => {
-  let { booze } = useParams()
-  const [imageUrl, setImageUrl] = useState('')
+  const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
     fetch(`https://thecocktaildb.com/api/json/v1/1/filter.php?i=${props.title}`)
       .then((res) => {
-        return res.json()
+        return res.json();
       })
       .then((data) => {
-        return setImageUrl(data.drinks[0].strDrinkThumb)
-      })
-  }, [props.title])
+        return setImageUrl(data.drinks[0].strDrinkThumb);
+      });
+  }, [props.title]);
 
   return (
     <Link to={`/alcohol/${props.booze}`}>
@@ -30,7 +29,7 @@ const BoozeCard = (props: Props) => {
         <h2 className="card-title">{props.title}</h2>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default BoozeCard
+export default BoozeCard;
