@@ -1,45 +1,45 @@
-import React, { useEffect, useState } from 'react'
-import { SearchBar } from './SearchBar'
-import './SearchBar.css'
-import { Drink } from '../../Interfaces'
+import React, { useEffect, useState } from "react";
+import { SearchBar } from "./SearchBar";
+import "./SearchBar.css";
+import { Drink } from "../../Interfaces";
 
 interface Props {
-  changeCallBack(drinks: Drink[]): void
+  changeCallBack(drinks: Drink[]): void;
 }
 
 interface SearchResponse {
-  drinks: Drink[] | null
+  drinks: Drink[] | null;
 }
 
 function SearchForDrinks(props: Props) {
-  const [drinks, setDrinks] = useState([] as Drink[])
-  const [search, setSearch] = useState('')
+  const [drinks, setDrinks] = useState([] as Drink[]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
-    if (search === '') {
-      setDrinks([])
-      props.changeCallBack([])
+    if (search === "") {
+      setDrinks([]);
+      props.changeCallBack([]);
     } else {
       fetch(`https://thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
         .then((res) => {
-          return res.json()
+          return res.json();
         })
 
         .then((response: SearchResponse) => {
           if (response.drinks === null) {
-            props.changeCallBack([])
-            return setDrinks([])
+            props.changeCallBack([]);
+            return setDrinks([]);
           } else {
-            props.changeCallBack(response.drinks)
-            return setDrinks(response.drinks)
+            props.changeCallBack(response.drinks);
+            return setDrinks(response.drinks);
           }
-        })
+        });
     }
-  }, [search])
+  }, [props, search]);
 
   const handleChange: React.ChangeEventHandler = (e) => {
-    setSearch((e.target as HTMLInputElement).value)
-  }
+    setSearch((e.target as HTMLInputElement).value);
+  };
 
   return (
     <div className="searchBarContainer">
@@ -53,7 +53,7 @@ function SearchForDrinks(props: Props) {
         </p>
       )}
     </div>
-  )
+  );
 }
 
-export default SearchForDrinks
+export default SearchForDrinks;

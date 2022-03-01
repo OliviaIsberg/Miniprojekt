@@ -37,13 +37,19 @@ function AboutPage() {
           </p>
 
           <h3>Coders:</h3>
-          
+
           <ul className="devList">
-            <li><img src={tomas}></img>Tomas Fridekrans</li>
-            <li><img src={olivia}></img>Olivia Isberg</li>
-            <li><img src={sabina}></img>Sabina Andersson</li>
+            <li>
+              <img src={tomas} alt="tomas"></img>Tomas Fridekrans
+            </li>
+            <li>
+              <img src={olivia} alt="olivia"></img>Olivia Isberg
+            </li>
+            <li>
+              <img src={sabina} alt="sabina"></img>Sabina Andersson
+            </li>
           </ul>
-          </div>
+        </div>
       </div>
     </>
   );
