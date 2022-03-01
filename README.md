@@ -44,3 +44,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Demo link
 
 Link to a demo: 
+
+Link to github repo: 
+https://github.com/OliviaIsberg/miniprojekt
