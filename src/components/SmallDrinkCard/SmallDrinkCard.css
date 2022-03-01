@@ -1,6 +1,6 @@
 .smallDrink-container {
   --shadow-color: 0deg 0% 63%;
-  flex: 1 1 15rem;
+  flex: 0 1 15rem;
   display: grid;
   border-radius: var(--borderRadius-default);
   border: 1px solid white;

@@ -1,10 +1,57 @@
 .bigCardsContainer {
   background-color: transparent;
-  display: flex;
-  padding: 4rem;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 3rem;
+  width: min(100% - 2rem, 80rem);
+  margin: 4rem auto;
+}
+
+.bigCardsContainer > div {
+  border-radius: var(--borderRadius-default);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.bigCardsContainer > div img {
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .bigCardInfo {
-  padding: 4rem;
+  color: white;
+  margin: 0;
+}
+
+.bigCardInfo h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.bigCardInfo h1 span {
+  color: #04fe3b;
+  margin-left: 1rem;
+  text-transform: lowercase;
+}
+
+.bigCardInfo .dim-info {
+  color: #a5a5a5;
+  margin: 0;
+}
+
+.bigCardInfo h3 {
+  color: var(--clr-blue);
+}
+
+.bigCardInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 3rem 0;
+}
+
+.bigCardInfo ul li span {
+  color: #be0ee9;
 }
