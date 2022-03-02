@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 :root {
   --clr-blue: #4e82f6;
@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, #272727 0%, rgba(39, 39, 39, 0.85) 100%);
@@ -17,21 +17,24 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 a {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
 
   text-decoration: none;
+  color: #ffffff;
 }
 
 button {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
 }
 
 .main {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  color: #ffff;
 }

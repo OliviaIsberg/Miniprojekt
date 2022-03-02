@@ -33,20 +33,25 @@ function AboutPage() {
           </ul>
           <p>
             The API used is by "thecocktaildb" :{" "}
-            <a href="https://thecocktaildb.com/">https://thecocktaildb.com/</a>
+            <a className="cocktailApi" href="https://thecocktaildb.com/">
+              https://thecocktaildb.com/
+            </a>
           </p>
 
           <h3>Coders:</h3>
 
           <ul className="devList">
             <li>
-              <img src={tomas} alt="tomas"></img>Tomas Fridekrans
+              <img src={tomas} alt="tomas"></img>
+              <p>Tomas Fridekrans</p>
             </li>
             <li>
-              <img src={olivia} alt="olivia"></img>Olivia Isberg
+              <img src={olivia} alt="olivia"></img>
+              <p>Olivia Isberg</p>
             </li>
             <li>
-              <img src={sabina} alt="sabina"></img>Sabina Andersson
+              <img src={sabina} alt="sabina"></img>
+              <p>Sabina Andersson</p>
             </li>
           </ul>
         </div>

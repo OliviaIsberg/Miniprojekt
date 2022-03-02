@@ -5,7 +5,9 @@ function Footer() {
   return (
     <div className="footerContainer">
       <footer>
-        <h2 className="footerHeading">Made with ❤ by us</h2>
+        <h2 className="footerHeading">
+          Made with <span>❤</span> by us
+        </h2>
         <Link to="/about">
           <h3>About</h3>
         </Link>

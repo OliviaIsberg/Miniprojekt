@@ -19,6 +19,7 @@
   background-position: center;
   object-fit: cover;
   object-position: center;
+  max-height: 700px;
 }
 
 .bigCardInfo {
