@@ -35,7 +35,7 @@
 }
 
 .bigCardInfo h1 span {
-  color: #04fe3b;
+  color: var(--clr-green);
   margin-left: 1rem;
   text-transform: lowercase;
 }

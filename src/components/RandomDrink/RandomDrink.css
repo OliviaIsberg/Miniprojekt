@@ -1,5 +1,5 @@
 .randomButton {
-  background: var(--clr-blue);
+  /* background-image: var(--clr-blue); */
   border-radius: 1.25rem;
   border: none;
   color: white;
@@ -8,4 +8,34 @@
   font-size: clamp(0.85rem, 2vw, 1.75rem);
   text-transform: uppercase;
   cursor: pointer;
+  background-image: linear-gradient(
+    90deg,
+    hsl(221deg 90% 64%) 0%,
+    hsl(204deg 100% 50%) 17%,
+    hsl(200deg 100% 50%) 30%,
+    hsl(196deg 100% 50%) 38%,
+    hsl(192deg 100% 50%) 46%,
+    hsl(188deg 100% 49%) 53%,
+    hsl(176deg 100% 45%) 61%,
+    hsl(163deg 100% 47%) 72%,
+    hsl(149deg 100% 49%) 85%,
+    hsl(133deg 99% 51%) 100%
+  );
+  background-size: 200%;
+  background-position: left;
+  transition: all 500ms ease;
+}
+
+.randomButton:hover {
+  --shadow-color: 0deg 0% 6%;
+  background-position: right;
+  transform: scale(1.05);
+  box-shadow: 0px 0.2px 0.2px hsl(var(--shadow-color) / 0.34),
+    0.1px 1px 1.1px -0.4px hsl(var(--shadow-color) / 0.34),
+    0.2px 1.9px 2.1px -0.7px hsl(var(--shadow-color) / 0.34),
+    0.3px 3.1px 3.5px -1.1px hsl(var(--shadow-color) / 0.34),
+    0.5px 5px 5.7px -1.4px hsl(var(--shadow-color) / 0.34),
+    0.7px 7.9px 8.9px -1.8px hsl(var(--shadow-color) / 0.34),
+    1.1px 11.9px 13.4px -2.1px hsl(var(--shadow-color) / 0.34),
+    1.6px 17.6px 19.9px -2.5px hsl(var(--shadow-color) / 0.34);
 }

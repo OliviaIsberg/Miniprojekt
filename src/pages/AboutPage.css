@@ -1,6 +1,7 @@
 .devList {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   width: min(100% - 2rem, 80rem);
   padding: 0;
@@ -11,7 +12,6 @@
 .devList li {
   list-style: none;
   text-align: center;
-  font-size: 2rem;
 }
 
 .devList img {
@@ -22,16 +22,23 @@
 }
 
 .textContainer {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: min(100% - 2rem, 80rem);
-  margin: auto;
+  margin: 0 auto;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
 }
 
 .textContainer h2 {
   color: var(--clr-blue);
+}
+.textContainer h3 {
+  color: #04fe3b;
+}
+
+.textContainer ul {
+  padding-left: 2vw;
 }
 
 .devList p {
