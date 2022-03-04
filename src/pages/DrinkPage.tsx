@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import './DrinkPage.css'
-import { Drink } from '../Interfaces'
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import "./DrinkPage.css";
+import { Drink } from "../Interfaces";
 
 function getIngredients(drink: Drink | undefined) {
   if (drink === undefined) {
-    return null
+    return null;
   }
 
   const info = [
@@ -24,40 +24,38 @@ function getIngredients(drink: Drink | undefined) {
     { ingredient: drink.strIngredient13, measure: drink.strMeasure13 },
     { ingredient: drink.strIngredient14, measure: drink.strMeasure14 },
     { ingredient: drink.strIngredient15, measure: drink.strMeasure15 },
-  ]
+  ];
 
-  let ingredients = []
+  let ingredients = [];
   for (let i = 0; i < info.length; i++) {
     if (info[i].ingredient === null) {
-      break
+      break;
     }
 
     ingredients.push(
       <li key={`ingredient-${i + 1}`}>
         {info[i].ingredient} <span>{info[i].measure}</span>
       </li>
-    )
+    );
   }
 
-  return ingredients
+  return ingredients;
 }
 
 const DrinkPage = () => {
-  const [drink, setDrink] = useState<Drink | undefined>(undefined)
-  const params = useParams()
-  console.log(params)
+  const [drink, setDrink] = useState<Drink | undefined>(undefined);
+  const params = useParams();
   useEffect(() => {
     fetch(`https://thecocktaildb.com/api/json/v1/1/lookup.php?i=${params.id}`)
       .then((res) => {
-        return res.json()
+        return res.json();
       })
       .then((data) => {
-        return setDrink(data.drinks[0])
-      })
-  }, [params.id])
+        return setDrink(data.drinks[0]);
+      });
+  }, [params.id]);
 
-  const ingredients = getIngredients(drink)
-  console.table(drink)
+  const ingredients = getIngredients(drink);
   return (
     <div className="bigCardsContainer">
       <div>
@@ -75,7 +73,7 @@ const DrinkPage = () => {
         <p>{drink?.strInstructions}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DrinkPage
+export default DrinkPage;
